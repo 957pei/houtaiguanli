@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+	a{
+	text-decoration: none;
+	}
+	a:link,a:visited{
+		color: rgb(0, 0, 238);
+	}
+	hr{
+		border:1px solid red;
+	}
+	.tit{
+		font-size: 12px;
+		line-height: 30px
+	}
+	.inta input{
+		box-sizing:border-box;
+		height: 40px;
+		float: left;
+		margin-top: 5px
+	}
+</style>
+	</head>
+	<body>
+		<div class="tit">欢迎admin!!!,<a href="getall.php?action=logout">注销</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="getall.php">返回系统首页</a></div><hr><style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.box{
+		width: 380px;
+		height: 380px;
+		margin: 80px auto;
+	}
+input{
+		width: 280px;
+		height: 40px;
+		margin: 10px 0;
+		border: 1px #ccc solid;
+		/*border-radius: 5px;*/
+		background-color: #E0EBF4;
+		box-sizing:border-box;
+		padding-left:20px;
+	}
+	input[type="submit"]{
+		background-color: rgb(105, 185, 70);
+		color: #fff;
+		padding-left:0px;
+	}
+	tr td:first-child{
+		font-size: 14px;
+		text-align: right;
+		padding-right: 20px;
+	}
+	h1{
+		line-height: 60px;
+		/*padding-left: 64px;*/
+		border-bottom: 1px #ccc solid;
+		margin-bottom: 30px; 
+
+	}
+
+</style>
+<div class="box">
+	<h1>修改用户信息</h1>
+	<form action="" method="post">
+		<table>
+			<tbody><tr>
+				<td>修改用户名</td>
+				<td><input type="text" name="username" value="张明"></td>
+				<td></td>
+			</tr>
+			<tr style="display:none">
+				<td>修改密码</td>
+				<td><input type="text" name="pwd2" value="d41d8cd98f00b204e9800998ecf8427e"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>修改密码</td>
+				<td><input type="password" name="pwd" value=""></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>修改邮箱</td>
+				<td><input type="text" name="email" value="zhangming@qq.com"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" name="send" value="提交"></td>
+				<td></td>
+			</tr>
+		</tbody></table>
+	</form>
+</div>
+<!-- <form action="" method="post">
+	<input type="text" name="username" value="张明"><br>
+	<input type="password" name="pwd" value="d41d8cd98f00b204e9800998ecf8427e"><br>
+	<input type="text" name="email" value="zhangming@qq.com"><br>
+	<input type="submit" value="submit" name="send">
+</form>
+ -->
+	
+	</body>
+</html>
